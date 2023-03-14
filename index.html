@@ -5,49 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API REST AJAX</title>
+    <title>Green API</title>
 </head>
 
 <body>
-    <h1>API REST AJAX`</h1>
-    <section class="crud">
-        <article>
-            <h2 class="crud-title">Agregar Super Heroe</h2>
-            <form class="crud-form">
-                <input type="text" name="nombre" , placeholder="nombre" required>
-                <br>
-                <input type="text" name="origen" placeholder="origen" required>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="hidden" name="id">
-            </form>
-        </article>
-        <article>
-            <h2>Ver Super Heroes</h2>
-            <table class="crud-table">
-                <thead></thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Origen</th>
-                    <th>Acciones</th>
-                </tr>
-                </thead>
-                <tbody>
+    <h1>Envio de mensajes a whatsapp</h1>
 
-                </tbody>
-            </table>
-        </article>
-    </section>
-    <template id="crud-template">
-        <tr>
-            <td class="name"></td>
-            <td class="origen"></td>
-            <td>
-                <button class="edit">Editar</button>
-                <button class="delete">Eliminiar</button>
-            </td>
-        </tr>
-    </template>
+
+    <form id="formulario">
+        <label for="telefono">
+            Teléfono destino:
+            <input type="tel" id="destino">
+        </label>
+        <br />
+        <br />
+        <label for="mensaje">
+            Mensaje:
+            <input type="text" id="mensaje">
+        </label>
+
+        <br />
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="mensajes.js"></script>
 </body>
 
 </html>
